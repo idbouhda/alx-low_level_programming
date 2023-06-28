@@ -52,10 +52,8 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 		b_len--;
 		biggest--;
 	}
-	if (*(r) != 0){
+	if (*(r) != 0)
 		return (r);
-}
-	else{
+	else
 		return (r + 1);
-}
 }
