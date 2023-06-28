@@ -1,18 +1,23 @@
 #include "main.h"
 /**
- * _strncpy - concatenate strings, defining the size of second string.
- * @dest: string with concatenation
- * @src: string to be concatenated
- * @n: size of second string
- * Return: Always 0.
+ * _strcmp - compare 2 strings.
+ * @s1: string to be compared.
+ * @s2: string for comparation.
+ * Return: Difference.
  */
-char *_strncpy(char *dest, char *src, int n)
+int _strcmp(char *s1, char *s2)
 {
-	int i;
-
-	for (i = 0; i < n && src[i] != '\0'; i++)
-		*(dest + i) = *(src + i);
-	for ( ; i < n; i++)
-		*(dest + i) = '\0';
-	return (dest);
+	while ((*s1 != '\0' && *s2 != '\0') && *s1 == *s2)
+	{
+		s1++;
+		s2++;
+	}
+	if (*s1 == *s2)
+	{
+		return (0);
+	}
+	else
+	{
+	return (*s1 - *s2);
+	}
 }
