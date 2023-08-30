@@ -13,11 +13,11 @@ int i = 0;
 
 if (i  < 48)
 {
+_putchar('\n');
 _putchar(s[i]);
 i++;
 return;
 }
-_putchar('\n');
 	_puts_recursion(s);
 }
 
