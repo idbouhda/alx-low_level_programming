@@ -14,7 +14,7 @@ char check_palindrome1(char *str, int left, int right)
 {
 if (str[left] == str[right])
 return (1);
-else if (str[left] >= str[right])
+else if (str[left] >  str[right])
 return (0);
 else
 return (check_palindrome1(str, str[left + 1], str[right - 1]));
