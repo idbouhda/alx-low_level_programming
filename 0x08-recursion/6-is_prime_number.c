@@ -12,7 +12,7 @@
  */
 int prime_number(int i, int j)
 {
-if (i <= 0)
+if (i <= 1)
 return (0);
 else if (i > j && i % j == 0)
 return (0);
