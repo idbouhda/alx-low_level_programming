@@ -32,5 +32,5 @@ int leng = strlen(s);
 if (leng == 0 || leng == 1)
 return (0);
 else
-return (check_palindrome1(s, 0, leng - 1));
+return (check_palindrome1(s, 0, leng));
 }
