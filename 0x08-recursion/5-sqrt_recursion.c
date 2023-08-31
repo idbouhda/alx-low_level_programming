@@ -25,5 +25,5 @@ return (natural_sqrt(i + 1, j));
  */
 int _sqrt_recursion(int n)
 {
-return (_sqrt_recursion(natural_sqrt(1, n)));
+return (natural_sqrt(1, n));
 }
