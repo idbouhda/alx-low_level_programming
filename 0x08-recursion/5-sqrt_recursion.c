@@ -14,5 +14,9 @@ if (m * m >  n)
 {
 return (-1);
 }
+else if (m * m == n)
+{
+return (1);
+}
 return (_sqrt_recursion(n - 1));
 }
