@@ -29,5 +29,8 @@ return (check_palindrome1(str, str[left + 1], str[right - 1]));
 int is_palindrome(char *s)
 {
 int leng = strlen(s);
+if (leng == 0 || leng == 1)
+return (0);
+else
 return (check_palindrome1(s, 0, leng - 1));
 }
