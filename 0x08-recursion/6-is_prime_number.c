@@ -29,6 +29,6 @@ return (prime_number(i, j + 1));
  */
 int is_prime_number(int n)
 {
-return (prime_number(n, 1));
+return (prime_number(n, 2));
 }
 
