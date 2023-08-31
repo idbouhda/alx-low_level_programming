@@ -17,7 +17,7 @@ return (-1);
 else if (m * m == n)
 {
 return (1);
-m++;
 }
+m = m + 1;
 return (_sqrt_recursion(n));
 }
