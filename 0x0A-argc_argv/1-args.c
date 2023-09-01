@@ -10,14 +10,8 @@
  */
 int main(int ac, char **av)
 {
-int i;
-
-for (i = 0; i < ac; i++)
-{
-int length = strlen(av[i]);
-
-printf("%d", length);
+(void)av;
+printf("%d", ac);
 printf("\n");
-}
 return (0);
 }
