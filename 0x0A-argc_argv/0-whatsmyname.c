@@ -11,6 +11,8 @@
 
 int main(int ac, char **av)
 {
+(void)ac;
 printf("%s", av[0]);
 printf("\n");
+return (0);
 }
