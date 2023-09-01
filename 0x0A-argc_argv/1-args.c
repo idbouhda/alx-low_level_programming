@@ -11,7 +11,7 @@
 int main(int ac, char **av)
 {
 (void)av;
-printf("%d", ac);
+printf("%d", ac - 1);
 printf("\n");
 return (0);
 }
