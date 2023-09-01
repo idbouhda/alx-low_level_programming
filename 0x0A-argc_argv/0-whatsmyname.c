@@ -1,17 +1,16 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
-#include "main.h"
 
 /**
- *  printname -  prints the name of program.
+ *  main -  prints the name of program.
+ * @ac: integer
+ * @av: character
  *
  * Return: Always 0.
  */
 
-void printname(void)
+int main(int ac, char **av)
 {
-char str[] = "whatsmyname";
-printf("%s", str);
+printf("%s",av[0]);
 printf("\n");
 }
