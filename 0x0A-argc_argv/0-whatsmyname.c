@@ -12,6 +12,6 @@
 void printname(void)
 {
 char str[] = "whatsmyname";
-puts(str);
+printf("%s", str);
 printf("\n");
 }
