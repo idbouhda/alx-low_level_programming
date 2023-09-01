@@ -11,6 +11,6 @@
 
 int main(int ac, char **av)
 {
-printf("%s",av[0]);
+printf("%s", av[0]);
 printf("\n");
 }
