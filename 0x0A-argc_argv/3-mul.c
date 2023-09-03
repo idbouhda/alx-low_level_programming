@@ -23,7 +23,7 @@ int main(int ac, char  **av)
 (void)ac;
 
 {
-if (av[1] == NULL)
+if (av[1] == NULL || av[2] == NULL)
 {
 printf("Error\n");
 return (1);
