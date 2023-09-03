@@ -21,22 +21,20 @@ return (n * m);
 int main(int ac, char  **av)
 {
 (void)ac;
-int k, i;
 
-for (i = 1; i < 2; i++)
 {
-if (av[i] == NULL)
+if (av[1] == NULL)
 {
 printf("Error\n");
 return (1);
 }
 else
 {
+int k = 1;
 int l = atoi(av[1]);
 int h = atoi(av[2]);
 k = multiplies(l, h);
 printf("%d\n", k);
-break;
 }
 }
 return (0);
