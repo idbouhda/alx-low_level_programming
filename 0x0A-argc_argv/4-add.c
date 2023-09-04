@@ -13,7 +13,7 @@ int main(int ac, char  **av)
 int k = 0;
 char *c;
 
-if (av[1] == NULL )
+if (av[1] == NULL)
 {
 return (printf("0\n"));
 }
