@@ -1,0 +1,50 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <ctype.h>
+/**
+ * add - multiplies two numbers
+ * @n: integer
+ * @m: integer
+ *
+ * Return: Always 0.
+ */
+int add(int n, int m)
+{
+return (n + m);
+}
+/**
+ * main -  program that adds positive numbers.
+ * @ac: integer
+ * @av: character
+ *
+ * Return: Always 0 or 1.
+ */
+int main(int ac, char  **av)
+{
+(void)ac;
+int i = 1;
+if (av[1] == NULL || av[2] == NULL)
+{
+printf("0\n");
+return (0);
+}
+
+while (i <= ac)
+{
+if(isalpha(av[i]) != 0)
+{
+printf("Error\n");
+return (1);
+}
+}
+int j = 1;
+for (j; j < ac; j++)
+{
+int k = 0;
+int l = atoi(av[j]);
+k = add(l, 1);
+
+printf("%d\n", k);
+}
+return (0);
+}
