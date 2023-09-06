@@ -13,10 +13,8 @@
 
 char *create_array(unsigned int size, char c)
 {
+char *buffer ;
 (void)c;
-
-
-char *buffer = NULL;
 
 if (size == 0)
 {
@@ -24,12 +22,11 @@ return (NULL);
 }
 else
 {
-for  (unsigned int i = 0; i < size; i++)
+unsigned int i;
+for (i = 0; i < size; i++)
 {
 buffer = malloc(size * sizeof(char));
 c = buffer[i];
-
-i++;
 }
 
 }
