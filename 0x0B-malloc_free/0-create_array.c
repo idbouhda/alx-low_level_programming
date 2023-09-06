@@ -31,8 +31,9 @@ c = buffer[i];
 printf("0x%02x ", c);
 }
 }
+return (buffer);
 create_array(72, 'S');
 create_array(96, '\0');
-return (buffer);
+
 }
 
