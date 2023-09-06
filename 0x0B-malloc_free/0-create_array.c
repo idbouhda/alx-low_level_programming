@@ -1,4 +1,5 @@
-#include <string.h>
+#include "main.h"
+#include <stdio.h>
 #include <stdlib.h>
 
 /**
@@ -12,9 +13,12 @@
 
 char *create_array(unsigned int size, char c)
 {
+(void)c;
+
+unsigned int i;
 
 char *buffer = NULL;
-unsigned int i = 0;
+
 if (size == 0)
 {
 return (NULL);
@@ -25,10 +29,9 @@ while (i < size)
 {
 buffer = malloc(size * sizeof(char));
 c = buffer[i];
-printf("%d", c);
+
 i++;
 }
-printf("\n");
 
 }
 return (buffer);
