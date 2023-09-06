@@ -20,14 +20,14 @@ if (size == 0)
 {
 return (NULL);
 }
-else
+else if (size != 0  && buffer != 0)
 {
 unsigned int i;
 for (i = 0; i < size; i++)
 {
 buffer = malloc(size * sizeof(char));
 c = buffer[i];
-printf("0x%02x", c);
+printf("0x%02x ", c);
 }
 
 }
