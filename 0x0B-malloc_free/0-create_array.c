@@ -22,10 +22,11 @@ return (NULL);
 }
 else if (size != 0)
 {
-unsigned int i;
-buffer = malloc(size * sizeof(char));
+
+buffer = (char *)malloc(size * sizeof(char));
 if (buffer != 0)
 {
+unsigned int i;
 for (i = 0; i < size; i++)
 c = buffer[i];
 printf("0x%02x ", c);
