@@ -28,7 +28,7 @@ if (buffer != 0)
 {
 unsigned int i;
 for (i = 0; i < size; i++)
-printf("0x%02x ", buffer[i]);
+c = buffer[i];
 }
 }
 return (buffer);
