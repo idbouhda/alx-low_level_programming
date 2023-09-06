@@ -22,11 +22,14 @@ return (NULL);
 }
 else
 {
+if (buffer != 0)
+{
 unsigned int i;
 for (i = 0; i < size; i++)
 {
 buffer = malloc(size * sizeof(char));
 c = buffer[i];
+}
 }
 
 }
