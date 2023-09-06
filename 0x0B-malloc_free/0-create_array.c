@@ -28,13 +28,9 @@ if (buffer != 0)
 {
 unsigned int i;
 for (i = 0; i < size; i++)
-c = buffer[i];
-printf("0x%02x ", c);
+printf("0x%02x ", buffer[i]);
 }
 }
 return (buffer);
-create_array(72, 'S');
-create_array(96, '\0');
-free(buffer);
 }
 
