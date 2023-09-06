@@ -13,23 +13,21 @@
 
 char *create_array(unsigned int size, char c)
 {
+
 char *buffer = NULL;
 (void)c;
-
 if (size == 0)
 {
 return (NULL);
 }
 else
 {
-if (buffer != 0)
-{
 unsigned int i;
 for (i = 0; i < size; i++)
 {
 buffer = malloc(size * sizeof(char));
 c = buffer[i];
-}
+printf("0x%02x", c);
 }
 
 }
