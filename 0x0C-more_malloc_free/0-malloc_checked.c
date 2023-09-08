@@ -15,7 +15,7 @@ void *ptr;
 
 ptr = (void *)malloc(b);
 printf("%p\n", (void *)ptr);
-free(ptr);
+
 if (ptr == NULL)
 {
 exit(98);
