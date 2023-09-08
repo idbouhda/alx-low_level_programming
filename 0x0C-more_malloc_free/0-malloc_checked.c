@@ -12,14 +12,14 @@
 void *malloc_checked(unsigned int b)
 {
 int *ptr;
-
+int x = 98;
 ptr = (int *)malloc(b * sizeof(int));
 printf("%p\n", (void *)ptr);
 free(ptr);
 if (ptr == NULL)
 {
-*ptr = 98;
-return (ptr);
+int *p = &x;
+return (p);
 }
-return (0);
+return (ptr);
 }
