@@ -7,7 +7,8 @@
  */
 void print_dog(struct dog *d)
 {
-if (d == NULL)
+if (d != NULL)
+{
 exit(0);
 if ((*d).name == NULL)
 {
@@ -21,5 +22,6 @@ else
 {
 printf("Name: %s\n", (*d).name);
 printf("Age: %.1f\n, Owner: %s\n", (*d).age, (*d).owner);
+}
 }
 }
