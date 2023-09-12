@@ -7,7 +7,7 @@
  */
 void print_dog(struct dog *d)
 {
-if (d != 0)
+if (d != NULL)
 {
 if ((*d).name == NULL && (*d).owner != NULL)
 {
