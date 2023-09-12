@@ -8,13 +8,14 @@
  *
  * Description: informaition about dog
  */
-typedef struct dog dog_t;
+
 struct dog
 {
 char *name;
 float age;
 char *owner;
 };
+typedef struct dog dog_t;
 #endif /* _DOG_H */
 
 #ifndef _FUNCTION_H
