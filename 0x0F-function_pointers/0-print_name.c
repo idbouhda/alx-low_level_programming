@@ -10,20 +10,10 @@
 void print_name(char *name, void (*f)(char *))
 {
 (void)(*f);
-printf("%s", name);
-}
-
-/**
- * f - prints a name
- * @name: name of the person
- *
- * Return: Nothing.
- */
-void f(char *name)
-{
-if (name == NULL)
+if (name == NULL || f == NULL)
 {
 return;
 }
 (*f)(name);
+printf("%s", name);
 }
