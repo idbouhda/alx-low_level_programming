@@ -21,5 +21,9 @@ printf("%s", name);
  */
 void f(char *name)
 {
+if (name == NULL)
+{
+return;
+}
 (*f)(name);
 }
