@@ -2,19 +2,19 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * print_name - prints a name 
+ * print_name - prints a name
  * @name: name of the person
- *
+ * @f: pointer to function
  * Return: Nothing.
  */
 void print_name(char *name, void (*f)(char *))
 {
-(void)(*f);   
+(void)(*f);
 printf("%s", name);
 }
 
 /**
- * f - prints a name 
+ * f - prints a name
  * @name: name of the person
  *
  * Return: Nothing.
