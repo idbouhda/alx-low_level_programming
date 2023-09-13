@@ -23,7 +23,8 @@ for (i = 0; i < size; i++)
 {
 if (array[i] > 0)
 {
-return ((*cmp)(array[i]));
+(*cmp)(array[i]);
+return (array[i]);
 }
 }
 return (1);
