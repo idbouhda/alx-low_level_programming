@@ -15,5 +15,5 @@ if (name == NULL || f == NULL)
 return;
 }
 (*f)(name);
-printf("%s", name);
+
 }
