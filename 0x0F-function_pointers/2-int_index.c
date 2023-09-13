@@ -18,9 +18,10 @@ if (size <= 0 || array == NULL || cmp == NULL)
 {
 return (-1);
 }
-else
-{
+
 for (i = 0; i < size; i++)
+{
+if (array[i] > 0)
 {
 return ((*cmp)(array[i]));
 }
